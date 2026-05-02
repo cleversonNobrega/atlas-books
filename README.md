@@ -1,70 +1,119 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 📚 Atlas Books
+ 
+> Sua próxima leitura está a um clique de distância.
+ 
+Uma aplicação web desenvolvida em React para descoberta e pesquisa de livros, com interface moderna e experiência fluida para leitores que querem encontrar seu próximo título favorito.
+ 
+---
+ 
+## 🖥️ Visão Geral
+ 
+O **Atlas Books** é uma plataforma de catálogo de livros que permite ao usuário pesquisar títulos, conferir os últimos lançamentos e receber recomendações personalizadas — tudo em uma interface elegante com tema escuro em tons de azul.
+ 
+### Funcionalidades
+ 
+- 🔍 **Pesquisa de livros** — busca em tempo real pelo nome do título no acervo disponível
+- 🆕 **Últimos Lançamentos** — seção dedicada aos livros mais recentes do catálogo
+- 💡 **Card de Recomendação** — sugestão de leitura com título, subtítulo e descrição
+- 🎨 **Interface responsiva** — layout fluido com gradientes e styled-components
+---
+ 
+## 🚀 Tecnologias
+ 
+| Tecnologia | Versão |
+|---|---|
+| [React](https://reactjs.org/) | ^18.2.0 |
+| [Styled Components](https://styled-components.com/) | ^5.3.5 |
+| [Create React App](https://create-react-app.dev/) | 5.0.1 |
+ 
+---
+ 
+## 📁 Estrutura do Projeto
+ 
+```
+atlas-books/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+└── src/
+    ├── App.js
+    ├── imagens/
+    └── componentes/
+        ├── Header/
+        ├── Logo/
+        ├── OpcoesHeader/
+        ├── IconesHeader/
+        ├── Input/
+        ├── Titulo/
+        ├── Pesquisa/
+        │   └── dadosPesquisa.js
+        ├── UltimosLancamentos/
+        │   └── dadosUltimosLancamentos.js
+        └── CardRecomenda/
+```
+ 
+---
+ 
+## ⚙️ Como Executar
+ 
+### Pré-requisitos
+ 
+- [Node.js](https://nodejs.org/) (v14 ou superior)
+- npm ou yarn
+### Instalação
+ 
+```bash
+# Clone o repositório
+git clone https://github.com/cleversonNobrega/atlas-books.git
+ 
+# Entre na pasta do projeto
+cd atlas-books
+ 
+# Instale as dependências
+npm install
+```
+ 
+### Rodando em desenvolvimento
+ 
+```bash
+npm start
+```
+ 
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
+ 
+### Build para produção
+ 
+```bash
+npm run build
+```
+ 
+Os arquivos otimizados serão gerados na pasta `build/`.
+ 
+---
+ 
+## 🧪 Testes
+ 
+```bash
+npm test
+```
+ 
+---
+ 
+## 📌 Componentes Principais
+ 
+| Componente | Descrição |
+|---|---|
+| `Header` | Barra de navegação com logo e opções |
+| `Pesquisa` | Seção de busca com filtro dinâmico de livros |
+| `UltimosLancamentos` | Grid com os livros mais recentes |
+| `CardRecomenda` | Card de recomendação de leitura personalizada |
+| `Input` | Campo de texto estilizado para pesquisa |
+| `Titulo` | Componente de título reutilizável e configurável |
+ 
+---
+ 
+## 🎨 Design
+ 
+A interface utiliza um gradiente azul escuro como tema principal (`#002F52` → `#326589`), transmitindo sofisticação e imersão — ideal para um ambiente de leitura. Os componentes são estilizados com **Styled Components**, garantindo estilos encapsulados e fáceis de manter.
+ 
+---
